@@ -1,3 +1,12 @@
+"use strict"; //avoiding any unnecessary error
+/*
+let hasDriversLicense = false
+let passTest = true
+if(passTest) {
+    hasDriverLicense =true // will show error as varibale is not declared bcz we used some error  missing s from variable
+}
+*/
+
 // logical and  &&   logical or  ||   not !
 
 console.log(true && true) //true
@@ -98,5 +107,13 @@ const tipValue = billValue >= 50 && billValue <= 300 ? (billValue * 15) / 100 : 
 const finalValue = billValue + tipValue
 
 console.log(`The bill was : (${billValue}), the tip is : (${tipValue}), and the final bill is : (${finalValue})`)
+
+//converting string to number
+const str = "12"
+console.log(+str) // it will give number
+
+//converting number to string
+const num = 12
+console.log(num + " ") //it will give string
 
 
