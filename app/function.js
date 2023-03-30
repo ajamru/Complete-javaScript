@@ -55,3 +55,23 @@ function juice(apple, orange) {
 }
 
 console.log(juice(5, 2))
+
+// function challange
+const calcAverage = (score1, score2, score3) => {
+    return (score1 + score2 + score3)/3
+}
+
+function checkWinner(averageDolphins, averageKoals) {
+    if(averageDolphins >= (averageKoals * 2)) {
+        console.log(`Dolphin wins (${averageDolphins} vs ${averageKoals})`)
+    } else if(averageKoals >= (averageDolphins * 2)) {
+        console.log(`Koals wins (${averageKoals} vs ${averageDolphins})`)
+    } else {
+        console.log('No One wins!')
+    }
+}
+
+const team1 = calcAverage(44, 23, 71)
+const team2 = calcAverage(85, 54, 41)
+checkWinner(team1, team2)
+checkWinner(576, 111)
