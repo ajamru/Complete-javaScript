@@ -32,3 +32,42 @@ for(let i = 0; i < mark.length; i++){
 // for(i of mark){
 //     console.log(i)
 // }
+
+/*
+//looping backword
+const detail = [
+    'Jonas',
+    'jena',
+    2037 - 1998,
+    'teacher',
+    ['michel', 'Peter', 'Steven']
+]
+
+for(let i = detail.length - 1; i >=0 ; i--) {
+    console.log(i, detail[i])
+}
+
+//loop inside loop
+for(let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`======= exercise is ${exercise}`)
+    for(let rep = 1; rep <= 6; rep++){
+        console.log(`Excersise ${exercise} : lifting weight rep ${rep}`)
+    }
+}
+*/
+
+//while loop
+
+let x = 0;
+while(x < 10) { 
+    console.log('print me')
+    x++
+}
+
+let role = Math.round(Math.random() * 6) + 1
+let count = 0
+while(role !== 6) {
+    console.log(`number is ${role} role again`)
+    count ++
+}
+console.log(`Total roll is ${count}`)
