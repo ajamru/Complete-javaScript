@@ -114,3 +114,26 @@ add(2, 3);
 
 restaurant.orderPizza('masroom', 'onion', 'olives')
 //first one is main ingradient and others are rest ingradient that is 
+
+//for of loop
+
+const menu = [...restaurant.starterMenue, ...restaurant.mainMenue];
+console.log(menu);
+
+
+//for-of loop will iterate against values
+for(let item of menu) {
+    console.log(item);
+};
+
+
+//for-in loop will iterate against index
+for(let i in menu) {
+    console.log(menu[i]);
+}
+
+//iterable -- .entries()
+
+for(let i of menu.entries()) {
+    console.log(i);
+} 
